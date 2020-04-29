@@ -1,0 +1,157 @@
+/*autor: Waycon Sales*/
+@font-face{
+	font-family:Marvel;
+	src:url(../fontes/MavenPro-Regular.ttf);		
+}
+
+@font-face{
+	font-family:Mregular;
+	src:url(../fontes/Montserrat-Regular.otf);
+
+}
+
+*{
+	padding: 0;
+	margin:0;
+	
+}
+
+.img{
+	width: 100%;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../imagens/imgHome.jpg), linear-gradient(230deg,#f9881f, #f9881f);
+	background-size: cover;
+	background-blend-mode: luminosity;
+	position: relative;
+			
+}
+
+.img:after{
+	content:'Basquete é Vida';
+	font-size:60px;
+	font-family: Marvel;
+	display: flex;
+	justify-content:center;
+	align-items:center; 
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 150px;
+	background:rgba(249,173,51,0.5);	 
+}
+
+.allInfo{
+	
+	height:400px;
+	text-align: center;
+	font-family:Mregular;
+	padding:30px;
+	margin-top:60px;
+	border-radius:20px;
+	box-shadow:2px 4px 10px #000;
+	
+}
+p{
+	text-align:justify;
+	font-family:Marvel;
+	font-size:20px;
+}
+.titulo{
+	background-color:#f9881f;
+	padding:5px;
+	width:40%;
+	position:relative;
+	left:30%;
+	border-radius:30px;
+}
+.txt{
+	margin-top:40px;
+}
+
+.link{
+	color:#f9881f;
+}
+
+.link:hover{
+	color:#F9AD33;
+	text-decoration:none;
+}
+.imagens{
+	margin-top:50px;
+	position:relative;
+	margin-bottom:100px;
+}
+.img3{
+	margin-top:50px;
+	width:400px;
+	height:400px;
+	object-fit:cover;
+	position:relative;
+	box-shadow:4px 6px 10px #000;
+	
+}
+.psimg{
+	display:inline-block;
+	width:45%;
+	margin-left:4%;
+}
+.right{
+	display:flex;
+	justify-content:right;
+}
+
+@media screen and (max-width:742px){
+	.allInfo{
+		height:450px;
+	}	
+	.titulo h3{
+		font-size:20px;
+		
+	}
+	.titulo{
+		width:50%;
+		left:25%;
+	}
+	p{
+		font-size:17px;
+	}
+	
+}
+@media screen and (max-width:428px){
+	.img{
+		display:none;
+	}
+}
+
+@media screen and (max-width:288px){
+	.titulo h3{
+		font-size:20px;
+		
+	}
+	.titulo{
+		width:90%;
+		left:5%;
+	}
+	p{
+		font-size:14px;
+	}
+	
+}
+@media screen and (max-width:208px){
+	.titulo h3{
+		font-size:16px;
+		
+	}
+	.titulo{
+		width:90%;
+		left:5%;
+	}
+	p{
+		font-size:10px;
+	}
+	
+}
