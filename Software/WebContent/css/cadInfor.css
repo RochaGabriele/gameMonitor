@@ -1,0 +1,237 @@
+@font-face{
+	font-family:Marvel;
+	src:url(../fontes/MavenPro-Regular.ttf);		
+}
+
+@font-face{
+	font-family:Mregular;
+	src:url(../fontes/Montserrat-Regular.otf);
+
+}
+
+.titleCad h1{
+	margin: 0 auto;
+	font-family: Mregular;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	width: 100%;
+	padding-bottom: 5px;
+	color: #eee;
+	font-size: 44px;
+	margin-top:20px;
+}
+
+.titleJeq h1{
+	margin: 0 auto;
+	font-family: Mregular;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	width: 60%;
+	padding-bottom: 5px;
+	color: #eee;
+	font-size: 35px;
+	margin-top:20px;
+}
+
+.titleAlt h1{
+	margin: 0 auto;
+	font-family: Mregular;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	width: 300px;
+	padding-bottom: 5px;
+	color: #eee;
+	font-size: 44px;
+	margin-top:20px;
+}
+
+
+h1{
+	font-family: Mregular;
+}
+#pad{
+	height: 370px;
+	width: 70%;
+	margin: 50px auto;
+	background-color: #fff;
+	padding-top: 30px;
+	border-radius:20px;
+	box-shadow:2px 4px 10px #000;
+}
+
+
+*:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 90%;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: Marvel;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+
+input[type="submit"] {
+  margin: 0 auto;
+  margin-top: 28px;
+  width: 40%;
+  height: 32px;
+  background: #F9AD33;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: Marvel;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+  margin-left: 15px;
+  
+  
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="number"] {
+  width: 7%;
+}
+
+#opcoes {
+    background-color: #fff;
+    width: 50%;
+    height: 30%;
+    margin: 50px auto;
+    transition: 0.8s ease-in-out;
+    border-radius:10px;
+}
+
+
+#opcoes:hover {
+    background-color: #F9AD33;
+	transition: 1s ease;
+	box-shadow: 0 2px 4px rgba(249,173,51, 0.4);
+}
+
+a.opcoes {
+	padding: 20px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-family: Mregular;
+    color: #F9AD33;
+    font-size: 24px;
+}
+
+a.opcoes:hover {
+	color: white;
+	transition: 1s ease;
+	
+}
+
+.bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(preto.jpg) no-repeat;
+	background-size: cover; 
+}
+
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #pad{
+	width: 100%;
+  }
+}
+
+@media screen and (max-width:588px){
+	.titleCad h1{
+		font-size:25px;
+	}
+	
+	.titleJeq h1{
+		font-size:25px;
+	}
+			
+}
+@media screen and (max-width:390px){
+	.titleCad h1{
+		font-size:20px;
+	}
+	.titleJeq h1{
+		font-size:20px;
+	}
+	a.opcoes{
+		font-size:18px;
+	}
+			
+}
