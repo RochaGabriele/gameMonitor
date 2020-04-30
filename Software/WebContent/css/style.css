@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+$black: #1d1f20;
+$blue: #83e4e2;
+$green: #a2ed56;
+$yellow: #fddc32;
+$white: #fafafa;
+
+input {
+  margin-bottom: 10px;
+}
+
+button, a{
+	text-align: center;
+  	text-decoration: none;
+  	border: solid 1px transparent;
+  	border-radius: 4px;
+  	padding: 0.5em 1em;
+  	color: #000;
+  	background-color: rgba(249,173,51,0.6);
+  	cursor: pointer;
+}
+
+.voltar{
+ 	margin-top: -30px;
+	background-color: hsla(0, 100%, 90%, 0.3);
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+    counter-reset: section;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    cursor: default;
+	  
+}
+
+.bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(preto.jpg) no-repeat;
+	background-size: cover; 
+}
+main {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 16px;
+}
+
+form{
+	padding: 20px 200px;
+	text-align:center;
+  	background-color:#fff;
+  	box-shadow:2px 4px 10px #000;
+  	border-radius: 20px;
+    width: 100%;
+    min-height:300px;
+    margin: 10% auto;
+}
+.form-control{
+	margin-bottom:10px;
+}
+h1, label{
+	text-align: center;
+	color: #F9AD33;
+}
+label{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.botoes{
+	margin-top:40px;
+	height:60px;
+	
+}
+bt{
+	float:left;
+	border-radius:5px;
+}
+sub{
+	float:right;
+	border-radius:5px;
+}
+
+
+ol.gradient-list {
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+
+ ol.list li {
+    background: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    top: -60px;
+}
+.elementExample {
+	background: linear-gradient(135deg, #83e4e2 0%,#a2ed56 100%);
+  	left: -2.5rem;
+  	width: 70px;
+  	height: 70px;
+  	line-height: 15px;
+  	color: #FFF;
+  	text-transform: uppercase;
+  	text-align: center;
+  	cursor: default;
+  	font-size: 12px;
+   	border-radius: 1rem 1rem 0 1rem;
+   	
+}
+.elementExample_first {
+  position: relative; /* Adicionamos essa linha */
+  z-index: 9;
+}
+
+.elementExample_first::before {
+  counter-increment: section;
+  content: counter(section);
+  color: black;
+  display: flex;
+  font: 25px 'Montserrat';
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-right: 12px;
+}
+
+[name~="dados[]"]{
+	display: block;
+}
+
+.titlePt h1{
+	margin: 0 auto;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-weight: normal;
+	width: 60%;
+	padding-bottom: 5px;
+	color: #eee;
+	font-size: 35px;
+	
+}
+
+.txt-sd{
+	background-color:#F9AD33;
+	padding:3px;
+	width:40%;
+	position:relative;
+	left:30%;
+	border-radius:30px;
+}
+	
+@media screen and (max-width:712px){
+	.titlePt h1{
+		font-size:30px;
+	}
+	.txt-saudacao{
+		font-size:20px;
+	}
+	.txt-sd{
+		padding:0px;
+		width:70%;
+		left:15%;
+	}
+}
+@media screen and (max-width:346px){
+	.txt-sd{
+		padding:0px;
+		width:100%;
+		left:0%;
+	}
+	
+	
+	
+	.botoes{
+		height:120px;
+		
+	}	
+	.bt{
+		width:100%;
+		font-size:15px;
+		
+	}
+	.sub{
+		width:100%;
+		font-size:15px;
+		
+	}
+}	
