@@ -9,6 +9,11 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
+<% 
+		String idH = (String) session.getAttribute("id");
+			if(idH != null){
+				%>
+
 	<section>
 		<div class="container-fluid img">
 			
@@ -17,10 +22,10 @@
 			<div class="titulo"><h3> Basquete Web </h3></div>
 			<div class="txt">
 				<p>
-					 Essa aplicação na web ajuda o usuário no desempenho de sua função, como por exemplo o cadastramento de partidas no caso do Apoio, controle de pontos no caso do Auxiliar...
+					 Essa aplicaï¿½ï¿½o na web ajuda o usuï¿½rio no desempenho de sua funï¿½ï¿½o, como por exemplo o cadastramento de partidas no caso do Apoio, controle de pontos no caso do Auxiliar...
 				</p>
 				<p>
-					Esparamos que você faça um bom uso da aplicação e seja um amante de basquete assim como nós.
+					Esparamos que vocï¿½ faï¿½a um bom uso da aplicaï¿½ï¿½o e seja um amante de basquete assim como nï¿½s.
 					Para um melhor uso disponibilizamos um tutorial de como usar, <a class="link" href="#">acesse-o.</a>
 				</p>
 			</div>	
@@ -42,6 +47,15 @@
 		
 	
 	</section>
+	
+			<% 
+			}else{
+				response.sendRedirect("deslogar.jsp");
+			}
+		
+		
+	
+	%>	
 
 </body>
 </html>

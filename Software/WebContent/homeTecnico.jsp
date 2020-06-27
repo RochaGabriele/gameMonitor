@@ -5,12 +5,30 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home Técnico</title>
+<title>Home Tï¿½cnico</title>
 </head>
 <body>
-	<%@ include file="menuTecnico.jsp"%>
-	<%@ include file="home.jsp"%>
-	<%@ include file="footer.jsp"%>
+
+	<% 
+		String id = (String) session.getAttribute("id");
+		String cargo = (String) session.getAttribute("cargo");
+		if(cargo.equals("Tecnico")){
+			if(id != null){
+				%>
+					<%@ include file="menuTecnico.jsp"%>
+					<%@ include file="home.jsp"%>
+					<%@ include file="footer.jsp"%>
+				<% 
+			}else{
+				response.sendRedirect("deslogar.jsp");
+			}
+		}else{
+			out.print("Sua sessï¿½o nï¿½o permite o acesso as funcionalidades de Tecnico"+"<br/>");
+			
+		}
+	
+	%>
+	
 
 </body>
 </html>

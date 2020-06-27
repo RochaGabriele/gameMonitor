@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
+
+
 	<div class="container-fluid">
 			    <div id="footer" class="footer">
 			      <div class="footer-content">
@@ -19,7 +21,7 @@
 			            <a href="#nome-site"><img class="img-fluid imgSubir" src="imagens/voltar-ao-topo.svg" alt="click para voltar ao topo"/></a>
 			          </div>
 			          <div class="col-6 col-md">
-			            <h2 class=" txt-foot text-center">Sobre Nós</h2>
+			            <h2 class=" txt-foot text-center">Sobre Nï¿½s</h2>
 			            <div id="sobre" class="sobre">
 			              Este aplicativo na web tem como objetivo facilitar o gerenciamento de partidas de basquete.
 			              Nossa equipe disponibiliza suporte nas redes sociais.
@@ -45,6 +47,6 @@
 			    </div>
 			  </div>
 	
-	
+				
 </body>
 </html>

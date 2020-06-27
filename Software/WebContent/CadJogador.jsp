@@ -13,7 +13,14 @@
 		 <script src='https://kit.fontawesome.com/56f370dbb1.js' crossorigin='anonymous'></script>
 	</head>
 	<body>
-	<%@ include file="menuApoio.jsp"%>
+	
+		<% 
+		String id = (String) session.getAttribute("id");
+		String cargo = (String) session.getAttribute("cargo");
+		if(cargo.equals("Apoio")){
+			if(id != null){
+				%>
+		<%@ include file="menuApoio.jsp"%>
         <div class="container-fluid h-100">
             <div class="row form-cadastro justify-content-center p-4">
                 <div class="col-md-3 align-self-center area-form">
@@ -25,6 +32,7 @@
 		<span class="small d-block text-center">Cadastro de jogadores</span>
 
 				<form  method="post" action="servCadastros" >
+					<input type="hidden" readonly="readonly" name="metodo"  value="inserirJogador" />
 					    <div class="input-group mt-2">
 					        <input type="text" class="form-control bg-light btn-outline-transparent"  name="nomeJogador"  placeholder="Nome completo do jogador(a)">
 					    </div>
@@ -38,7 +46,7 @@
 					        <input type="text" class="form-control bg-light btn-outline-transparent"  name="telefone"  placeholder="Telefone">
 					    </div>
 					    <div class="input-group mt-2">
-					        <input type="text" class="form-control bg-light btn-outline-transparent"  name="numCamisa"  placeholder="Número da camisa">
+					        <input type="text" class="form-control bg-light btn-outline-transparent"  name="numCamisa"  placeholder="Nï¿½mero da camisa">
 					    </div>
 					    <div class="input-group mt-2">
 					        <input type="text" class="form-control bg-light btn-outline-transparent"  name="nomeTime"  placeholder="Nome do time">
@@ -59,5 +67,19 @@
     	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
+									
+				<% 
+			}else{
+				response.sendRedirect("deslogar.jsp");
+			}
+		}else{
+			out.print("Sua sessï¿½o nï¿½o permite o acesso as funcionalidades de Apoio"+"<br/>");
+			
+		}
+	
+	%>
+	
+	
+	
+</body>
 </html>

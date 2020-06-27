@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cadastro de Informações</title>
+<title>Cadastro de Informaï¿½ï¿½es</title>
 <link rel="stylesheet" type="text/css" href="css/cadInfor.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 </head>
@@ -20,7 +20,7 @@
 	<div class="container-fluid">
 	<div class="container">
 	<div class='titleCad text-center'>
-		<h1>Cadastro de Informações</h1>
+		<h1>Cadastro de Informaï¿½ï¿½es</h1>
 	</div>
 
 	

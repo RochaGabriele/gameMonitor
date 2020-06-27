@@ -11,8 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 </head>
 <body>
-
- 	<nav class='navbar navbar-expand-md navbar-dark col-md-12 col-xs-12 col-sm-12 col-lg-12' id='navbar'>
+	
+	<% 
+		String idMenu = (String) session.getAttribute("id");
+		String cargoMenu = (String) session.getAttribute("cargo");
+		if(cargoMenu.equals("Apoio")){
+			if(idMenu != null){
+				%>
+					<nav class='navbar navbar-expand-md navbar-dark col-md-12 col-xs-12 col-sm-12 col-lg-12' id='navbar'>
       <div class='container'>
         <a id="nome-site" class='navbar-brand h1'>Basquete Web</a>
         <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#items'>
@@ -21,11 +27,11 @@
         <div class='collapse navbar-collapse' id='items'>
           <ul class='navbar-nav mr-auto'>
             <li class='nav-item'><a class='nav-link text-secondary' href="homeApoio.jsp">Home</a></li>
-            <li class='nav-item'><a class='nav-link text-secondary' href="cadTime.jsp">Novo Time</a></li>
+            <li class='nav-item'><a class='nav-link text-secondary' href="ServTime?metodo=selecionarTec">Novo Time</a></li>
             <li class='nav-item'><a class='nav-link text-secondary' href="CadJogador.jsp">Cadastrar Jogadores</a></li>
             <li class='nav-item'><a class='nav-link text-secondary' href="CadPartida.jsp">Agendar Partidas</a></li>
-            <li class='nav-item'><a class='nav-link text-secondary' href="gerenciarJog.jsp">Gerenciar Jogadores</a></li>
-			<li class='nav-item'><a class='nav-link text-secondary' href="perfilApoio.jsp">Perfil</a></li>
+            <li class='nav-item'><a class='nav-link text-secondary' href="servCadastros?metodo=selecionarTimes">Gerenciar Jogadores</a></li>
+			<li class='nav-item'><a class='nav-link text-secondary' href="ServAtor?metodo=selecionarPerfil&&destino=perfilApoio.jsp&&id=<%= idMenu %>">Perfil</a></li>
           </ul>
       	</div>
       </div>
@@ -33,5 +39,18 @@
 </body>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>				
+				<% 
+			}else{
+				response.sendRedirect("deslogar.jsp");
+			}
+		}else{
+			out.print("Sua sess�o n�o permite o acesso as funcionalidades de Apoio"+"<br/>");
+			
+		}
+		
+	
+	%>
+
+ 	
 </html>

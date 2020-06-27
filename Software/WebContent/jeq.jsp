@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cadastro de Informações - Jogadores Em Quadra</title>
+<title>Cadastro de Informaï¿½ï¿½es - Jogadores Em Quadra</title>
 <link rel="stylesheet" type="text/css" href="css/cadInfor.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 </head>

@@ -19,15 +19,15 @@
 				<div class="textoo">
 					<div>	
 						<h4 class="font">Placar:</h4>
-						<div>À espera de um select </div>
+						<div>ï¿½ espera de um select </div>
 					</div>	
 					<div>	
 						<h4 class="font">Maiores pontuadores:</h4>
-						<div>À espera de um select (nome e somatoria de pontos)</div>
+						<div>ï¿½ espera de um select (nome e somatoria de pontos)</div>
 					</div>
 					<div>
 						<h4 class="font">Supervisores da partida:</h4>
-						<div>À espera de um select (nome deles)</div>
+						<div>ï¿½ espera de um select (nome deles)</div>
 					</div>
 					...
 					

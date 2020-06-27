@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Resumo Técnico </title>
+<title>Resumo Tï¿½cnico </title>
 </head>
 <body>
 
