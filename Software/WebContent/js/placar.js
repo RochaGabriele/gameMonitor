@@ -1,3 +1,4 @@
+//autor: Gabriele Rocha
 var t1=0, t2=0, srcImg1T1, srcImg2T1, srcImg1T2, srcImg2T2;
 
 var $botaoMaisTime1 = document.querySelector('#btn-mais-time1');
@@ -29,7 +30,7 @@ $botaoMenosTime2.addEventListener('click',function() {
     setPontuacaoTime2(t2);
 });
 function setPontuacaoTime1(x) {
-    if ((x > 99) || (x < 0)) {
+    if ((x > 99) || (x < 0)) { 
         srcImg1T1='none.png';
         srcImg2T1='none.png';
     } else {

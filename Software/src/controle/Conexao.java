@@ -26,7 +26,7 @@ public class Conexao {
 		try {
 			String host = "localhost";
 			String user = "root";
-			String pwd = "";
+			String pwd = "gabi";
 			String bd = "basquete";
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			this.setCon( DriverManager.getConnection("jdbc:mysql://"+host+"/"+bd+"?useTimezone=true&serverTimezone=UTC",user,pwd));

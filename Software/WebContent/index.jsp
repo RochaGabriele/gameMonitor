@@ -18,7 +18,7 @@
 	</div>
 	<section>
 		<div class="container-fluid">
-			<form action="ServAtor" method="post" class="form  container">
+			<form action="validarLogin.jsp" method="post" class="form  container">
 				<div class="text-center mb-1">
 					<h3 class="txt-saudacao">Seja Bem Vindo</h3>
 					<img alt="imagem de um avatar representando uma foto de perfil" class="img-fluid imgProfile" src="imagens/avatar.svg"/>
@@ -28,13 +28,13 @@
 				</div>
 				<div class="campos camposLogin">
 					<div class=" loginform-group">
-				    	<label for="user" class="font">Nome de Usuário</label>
-				    	<input type="text" class="form-control" name="user" id="user"  placeholder="Seu nome de usuário"/>
+				    	<label for="cpf" class="font">CPF</label>
+				    	<input type="text" class="form-control" name="cpf" id="cpf"  placeholder="Seu cpf, apenas números" required/>
 				  	</div>
 				  	
 				  	<div class=" loginform-group">
 				    	<label for="senha" class="font">Senha</label>
-				    	<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha"/>
+				    	<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha" required/>
 				    </div>
 				  	<div class=" loginform-group">
 	  				<input type="submit" id="logar" class="btn text-center" value="Enviar"/>
@@ -50,8 +50,6 @@
 	<footer>
 		<%@ include file="footer.jsp"%> 
 	</footer>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/sweetalert.min.js"></script>
-<script type="text/javascript" src="js/login.js"></script>
+
 </body>
 </html>

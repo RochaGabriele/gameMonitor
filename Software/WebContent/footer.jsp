@@ -3,15 +3,15 @@
 <% // autor: Waycon Sales %>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>footer</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<script src="https://kit.fontawesome.com/56f370dbb1.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/footer.css">
-</head>
-<body>
-	<div class="container-fluid">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>footer</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script src="https://kit.fontawesome.com/56f370dbb1.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+	</head>
+	<body>
+		<div class="container-fluid">
 			    <div id="footer" class="footer">
 			      <div class="footer-content">
 			        <div class="row mx-lg-n5">
@@ -45,6 +45,5 @@
 			    </div>
 			  </div>
 	
-	
-</body>
+	</body>
 </html>

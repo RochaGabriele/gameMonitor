@@ -1,32 +1,38 @@
 package modelo;
 
 public class ModelPartida {
+	private int id;
 	private String data;
-	private String horario;
-	private String localidade;
+	private String hora;
+	private String local;
 	private String nomeTime;
-	private String nomeAdversario;
+	private String timeAdversario;
 	private String nomeArbitro;
 	private String nomeApoio;
 	private String nomeAuxiliar;
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getData() {
 		return data;
 	}
 	public void setData(String data) {
 		this.data = data;
 	}
-	public String getHorario() {
-		return horario;
+	public String getHora() {
+		return hora;
 	}
-	public void setHorario(String horario) {
-		this.horario = horario;
+	public void setHora(String hora) {
+		this.hora = hora;
 	}
-	public String getLocalidade() {
-		return localidade;
+	public String getLocal() {
+		return local;
 	}
-	public void setLocalidade(String localidade) {
-		this.localidade = localidade;
+	public void setLocal(String local) {
+		this.local = local;
 	}
 	public String getNomeTime() {
 		return nomeTime;
@@ -34,11 +40,11 @@ public class ModelPartida {
 	public void setNomeTime(String nomeTime) {
 		this.nomeTime = nomeTime;
 	}
-	public String getNomeAdversario() {
-		return nomeAdversario;
+	public String getTimeAdversario() {
+		return timeAdversario;
 	}
-	public void setNomeAdversario(String nomeAdversario) {
-		this.nomeAdversario = nomeAdversario;
+	public void setTimeAdversario(String timeAdversario) {
+		this.timeAdversario = timeAdversario;
 	}
 	public String getNomeArbitro() {
 		return nomeArbitro;

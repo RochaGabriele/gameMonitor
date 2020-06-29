@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Resumo Técnico </title>
+	<meta charset="ISO-8859-1">
+	<title>Resumo Técnico </title>
 </head>
 <body>
 

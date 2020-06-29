@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <% // autor: Waycon Sales %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -27,45 +28,46 @@
 					</div>
 				</div>
 				<div class="campos">
+					<input type="hidden" readonly="readonly" name="metodo"  value="inserir" />
 					<div class="form-group">
 				    	<label for="user" class="font">Usuário</label>
-				    	<input type="text" class="form-control" name="user" id="user"  placeholder="Seu nome de usuário"/>
+				    	<input type="text" class="form-control" name="user" id="user"  placeholder="Seu nome de usuário" required/>
 				  	</div>
 				  	<div class="form-group ">
 				    	<label for="nomeCompleto" class="font">Nome Completo</label>
-				    	<input type="text" class="form-control" name="nomeCompleto" id="nomeCompleto"  placeholder="Seu nome completo"/>
+				    	<input type="text" class="form-control" name="nome" id="nome"  placeholder="Seu nome completo" required/>
 				  	</div>
 				  	<div class="form-group">
 				    	<label for="cpf" class="font">CPF</label>
-				    	<input type="text" class="form-control" name="cpf" id="cpf"  placeholder="Seu cpf sem caracteres como '.' ou '-', por favor."/>
+				    	<input type="text" class="form-control" name="cpf" id="cpf"  placeholder="Seu cpf sem caracteres como '.' ou '-', por favor." required/>
 				  	</div>
 				  	<div class="form-group">
 				    	<label for="email" class="font">Email</label>
-				    	<input type="text" class="form-control" name="email" id="email"  placeholder="Seu email..."/>
+				    	<input type="text" class="form-control" name="email" id="email"  placeholder="Seu email..." required/>
 				  	</div>
 				  	<div class="form-group">
 					  	<label class="font">Cargo</label>
-					  	<select class="form-control">	
-		  					<option value="Tecnico" id="cargo">Técnico</option>
-		  					<option value="Auxiliar" id="cargo">Auxiliar</option>
-		  					<option value="Apoio" id="cargo">Apoio</option>
+					  	<select name="cargo" id="cargo" class="form-control">	
+		  					<option value="Tecnico" >Técnico</option>
+		  					<option value="Auxiliar">Auxiliar</option>
+		  					<option value="Apoio" >Apoio</option>
 						</select>
 					</div>
 					<div class="form-group">
 				    	<label for="end" class="font">Endereço</label>
-				    	<input type="text" class="form-control" name="end" id="end"  placeholder="Cidade, rua, numero da casa"/>
+				    	<input type="text" class="form-control" name="end" id="end"  placeholder="Cidade, rua, numero da casa" required/>
 				  	</div>
 				  	<div class="form-group">
 				    	<label for="senha" class="font">Senha</label>
-				    	<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha"/>
+				    	<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha" required/>
 				    </div>
 				    <div class="form-group">
 				    	<label for="tel" class="font">Telefone</label>
-				    	<input type="text" class="form-control" name="tel" id="tel"  placeholder="DDD e número sem caracteres especiais como '('  ')'  '.'  '-' "/>
+				    	<input type="text" class="form-control" name="tel" id="tel"  placeholder="DDD e número sem caracteres especiais como '('  ')'  '.'  '-' " required/>
 				  	</div>
 				  	<div class="form-group">
 				    	<label for="confsenha" class="font">Confirmação de senha</label>
-				    	<input type="password" class="form-control" name="confsenha" id="confsenha" placeholder="Confirme a sua senha"/>
+				    	<input type="password" class="form-control" name="confsenha" id="confsenha" placeholder="Confirme a sua senha" required/>
 				  	</div>
 				  	<div class="form-group">
 	  				<input type="submit" id="cadastrar" class="btn text-center" value="Cadastrar"/>
@@ -79,11 +81,9 @@
 		</div>
 	</section>
 	<footer>
-		<%@ include file="footer.jsp"%> 
+		<%@ include file="footer.jsp"%>
 	</footer>
 
 </body>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/sweetalert.min.js"></script>
-<script type="text/javascript" src="js/cadastro.js"></script>
+	<c:import url="includes/scripts.jsp"></c:import>
 </html>

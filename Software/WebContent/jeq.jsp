@@ -4,10 +4,11 @@
 <%//autor: Gabriele Rocha %>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Cadastro de Informações - Jogadores Em Quadra</title>
-<link rel="stylesheet" type="text/css" href="css/cadInfor.css"/>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<meta charset="ISO-8859-1">
+	<title>Cadastro de Informações - Jogadores Em Quadra</title>
+	<link rel="stylesheet" type="text/css" href="css/cadInfor.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<script src="js/sweetalert.min.js"></script>
 </head>
 <body>
 	<%@ include file="menuAuxiliar.jsp"%>
@@ -26,13 +27,15 @@
 			<div class='jogQua' id='pad'>
 				<div id='container'>
 				  <div class='signup'>
-				     <form>
-				       <input type='text' placeholder='Jogador 1:'  />
-				       <input type='text' placeholder='Jogador 2:'  />
-				       <input type='text' placeholder='Jogador 3:'  />
-				       <input type='text' placeholder='Jogador 4:'  />
-				       <input type='text' placeholder='Jogador 5:'  />
-				       <input type='submit' placeholder='SUBMIT' value='Salvar' />
+				     <form method="POST" action="dads" id="formulario">
+				       <input type='text' placeholder='Armador:' id='Armador' name='Armador' value="${Armador}" />
+				       <input type='text' placeholder='Ala-armador:' id='Alaarmador' name='Alaarmador' value="${Alaarmador}" />
+				       <input type='text' placeholder='Ala:' id='Ala' name='Ala' value="${Ala}" />
+				       <input type='text' placeholder='Ala-pivô:' id='Alapivo' name='Alapivo' value="${Alapivo}" />
+				       <input type='text' placeholder='Pivô:' id="Pivo" name='Pivo' value="${Pivo}" />
+				       <div class="fter">
+				       		<button type="button" id="tom">Salvar</button>
+				       </div>
 				     </form>
 				     
 				  </div>
@@ -40,9 +43,45 @@
 				</div>
 				
 			</div>
-			<a href='cadInfor.jsp'><button style="margin-top: -50px; margin-left: 10px; margin-bottom:50px; text-align: center;  	text-decoration: none;  	border: solid 1px transparent;  	border-radius: 4px;  	padding: 0.5em 1em;  	color: #ffffff;  	background-color: hsla(0, 100%, 90%, 0.3);  	cursor: pointer;">Voltar</button></a>
 		</div>	
 	</div>
 <%@ include file="footer.jsp"%>
+<script type="text/javascript">
+
+document.getElementById("tom").onclick = function() {
+	 var Armador = document.getElementById("Armador");
+     var Alaarmador = document.getElementById("Alaarmador");
+     var Ala = document.getElementById("Ala");
+     var Alapivo = document.getElementById("Alapivo");
+     var Pivo = document.getElementById("Pivo");
+     var formulario = document.getElementById("formulario");
+     
+     
+
+     if (Armador.value == "" || Armador.value.lenght < 3) {
+    	 swal("","Armador não informado!", "warning");
+    	 return;	
+     }
+     if (Alaarmador.value == "" || Alaarmador.value.lenght < 3) {
+         swal("","Ala-armador não informado!", "warning");
+         return;
+       }
+     if (Ala.value == "" || Ala.value.lenght < 3) {
+         swal("","Ala não informado!", "warning");
+         return;
+       }
+     if (Alapivo.value == "" || Alapivo.value.lenght < 3) {
+         swal("","Ala-pivô não informado!", "warning");
+         return;
+       }
+     if (Pivo.value == "" || Pivo.value.lenght < 3) {
+         swal("","Pivô não informado!", "warning");
+         return;
+       }
+     
+    formulario.submit();
+};
+
+</script>
 </body>
 </html>

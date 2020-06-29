@@ -1,3 +1,5 @@
+/*autor: Gabriele Rocha*/
+
 @font-face{
 	font-family:Marvel;
 	src:url(../fontes/MavenPro-Regular.ttf);		
@@ -19,6 +21,23 @@
 	color: #eee;
 	font-size: 44px;
 	margin-top:20px;
+}
+
+.fter{
+	text-align: center;
+}
+#tom {
+  background: #73a4dc;
+  border-radius: 2px;
+  padding: 10px 15px;
+  width: 20%;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+#tom:hover {
+  background: #5988bd;
 }
 
 .titleJeq h1{

@@ -1,18 +1,24 @@
 package modelo;
 
 public class ModelJogador {
-	private String nomeJogador;
-	private int idade;
+
 	private String cpf;
-	private int telefone;
-	private int numCamisas;
-	private String nomeTime;
-	
-	public String getNomeJogador() {
-		return nomeJogador;
+	private String nome;
+	private int idade;
+	private String tel;
+	private int nCamisa;
+	private String time;
+	public String getCpf() {
+		return cpf;
 	}
-	public void setNomeJogador(String nomeJogador) {
-		this.nomeJogador = nomeJogador;
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public int getIdade() {
 		return idade;
@@ -20,29 +26,24 @@ public class ModelJogador {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public String getCpf() {
-		return cpf;
+	public String getTel() {
+		return tel;
 	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setTel(String tel) {
+		this.tel = tel;
 	}
-	public int getTelefone() {
-		return telefone;
+	public int getnCamisa() {
+		return nCamisa;
 	}
-	public void setTelefone(int telefone) {
-		this.telefone = telefone;
+	public void setnCamisa(int nCamisa) {
+		this.nCamisa = nCamisa;
 	}
-	public int getNumCamisas() {
-		return numCamisas;
+	public String getTime() {
+		return time;
 	}
-	public void setNumCamisas(int numCamisas) {
-		this.numCamisas = numCamisas;
-	}
-	public String getNomeTime() {
-		return nomeTime;
-	}
-	public void setNomeTime(String nomeTime) {
-		this.nomeTime = nomeTime;
+	public void setTime(String time) {
+		this.time = time;
 	}
 	
+		
 }

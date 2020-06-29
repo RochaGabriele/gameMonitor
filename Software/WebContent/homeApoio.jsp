@@ -4,12 +4,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Home Apoio</title>
+	<meta charset="ISO-8859-1">
+	<title>Home Apoio</title>
 </head>
 <body>
-	<%@ include file="menuApoio.jsp"%>
-	<%@ include file="home.jsp"%>
-	<%@ include file="footer.jsp"%>
+	<% 
+		String id = (String) session.getAttribute("id");
+		String cargo = (String) session.getAttribute("cargo");
+		if(cargo.equals("Apoio")){
+			if(id != null){
+				%>
+				<%@ include file="menuApoio.jsp"%>
+				<%@ include file="home.jsp"%>
+				<%@ include file="footer.jsp"%>
+				<% 
+			}else{
+				response.sendRedirect("deslogar.jsp");
+			}
+		}else{
+			out.print("Sua sessão não permite o acesso as funcionalidades de Apoio"+"<br/>");
+			
+		}
+		
+	
+	%>
+	
 </body>
 </html>

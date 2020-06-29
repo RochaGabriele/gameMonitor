@@ -3,12 +3,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Home</title>
-<link rel="stylesheet" type="text/css" href="css/home.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta charset="ISO-8859-1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
+<% 
+		String idH = (String) session.getAttribute("id");
+			if(idH != null){
+				%>
+
 	<section>
 		<div class="container-fluid img">
 			
@@ -42,6 +47,15 @@
 		
 	
 	</section>
+	
+			<% 
+			}else{
+				response.sendRedirect("deslogar.jsp");
+			}
+		
+		
+	
+	%>	
 
 </body>
 </html>

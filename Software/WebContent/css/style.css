@@ -4,7 +4,7 @@ $blue: #83e4e2;
 $green: #a2ed56;
 $yellow: #fddc32;
 $white: #fafafa;
-
+/*autor: Gabriele Rocha*/
 input {
   margin-bottom: 10px;
 }
@@ -58,7 +58,7 @@ form{
   	background-color:#fff;
   	box-shadow:2px 4px 10px #000;
   	border-radius: 20px;
-    width: 100%;
+    width: 60%;
     min-height:300px;
     margin: 10% auto;
 }
@@ -121,7 +121,7 @@ ol.gradient-list {
    	
 }
 .elementExample_first {
-  position: relative; /* Adicionamos essa linha */
+  position: relative; 
   z-index: 9;
 }
 
