@@ -1,0 +1,135 @@
+/*autor: Waycon Sales*/
+.swal-overlay {
+  background-color: rgba(249,173,51,0.6);
+}
+
+@font-face{
+	font-family:Marvel;
+	src:url(../fontes/MavenPro-Regular.ttf);		
+}
+
+@font-face{
+	font-family:Mregular;
+	src:url(../fontes/Montserrat-Regular.otf);
+
+}
+
+
+*{
+	padding: 0;
+	margin:0;	
+}
+.font{
+	font-family: Marvel;
+}
+.cabeca{
+	background-color:#F9AD33;
+	height:50px;
+}
+.nome-site{
+	padding-left:15px;
+}
+section{
+	
+	width:100%;
+	position:relative;
+	top:50px;
+}
+
+.form{
+	background-color:#fff;
+	box-shadow:2px 4px 10px #000;
+	padding-top:30px;
+	border-radius:20px;
+}
+
+.log-cad{
+	color:#F9AD33;
+}
+.campos{
+	height:600px;
+	padding-top:15px;
+}
+.camposLogin{
+	height:330px;
+}
+.imgProfile{
+	width:150px;
+	height:150px;
+}
+.form-group{
+	width:45%;
+	display: inline-block;
+	margin-left:3%;
+	margin-top:15px;
+}
+.loginform-group{
+	display:block;
+	position: relative;
+	left:15%;
+	width:70%;
+	margin-top:15px;
+}
+.btn{
+	width:100%;
+	background-color:#F9AD33;
+}
+.link{
+	color:#f97c33;
+	
+}
+.link:hover{
+	color:#000;
+}
+.link-login{
+	text-align:center;
+	width:100%;
+}
+
+footer{
+	position:relative;
+	top:150px;
+}
+
+.txt-saudacao{
+	font-family:Mregular;
+}
+@media screen and (max-width:767px){
+	.campos{
+		height:1000px;
+	}
+	.camposLogin{
+		height:400px;
+	}
+	.form-group{
+		display:block;
+		width:100%;
+		padding-right:5%;
+	}
+	.loginform-group{
+		position: none;
+		left:0;
+		width:100%;
+	}
+	.imgProfile{
+		width:100px;
+		height:100px;
+	}	
+	
+}
+@media screen and (max-width:576px){
+	.cabeca{
+		text-align:center;
+	}
+	.nome-site{
+		padding-left:0;
+	}
+	.bs{
+		font-size:30px;
+	}
+	.form{
+		box-shadow:none;
+		border-radius:none;
+	}
+			
+}

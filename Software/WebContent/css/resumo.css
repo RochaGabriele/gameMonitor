@@ -1,0 +1,106 @@
+/*autor: Gabriele Rocha*/
+@font-face{
+	font-family:Marvel;
+	src:url(../fontes/MavenPro-Regular.ttf);		
+}
+
+*{
+	font-family:Marvel;
+	padding:0;
+	margin:0;
+}
+
+section{
+	width:100%;
+	position:relative;
+	top:50px;
+	margin-bottom:150px;
+}
+
+.floatLeft{
+	float:left;
+	border: 3px inset; 
+	padding: 6px 12px; 
+	vertical-align: middle; 
+	color: blue;
+	border-radius:3px; 
+	font-size: 16px; 
+	font-family:helvetica, serif;
+	margin: 30px 10%;
+}
+.floatRight{
+	float: right;
+	border: 3px inset; 
+	padding: 6px 12px; 
+	vertical-align: middle; 
+	color: blue;
+	border-radius:3px; 
+	font-size: 16px; 
+	font-family:helvetica, serif;
+	margin: 30px 10%;
+}
+
+.print{
+	background-color:#fff;
+	box-shadow:2px 4px 10px #000;
+	padding-top:30px;
+	border-radius:20px;
+	padding-bottom:30px;
+}
+
+.txt-sd{
+	background-color:#F9AD33;
+	padding:3px;
+	width:40%;
+	position:relative;
+	left:30%;
+	border-radius:30px;
+}
+
+.textoo{
+	margin-top:30px;
+	font-size:20px;
+}
+div{
+	margin-bottom:10px;
+}
+h4{
+	margin-top:5px;
+	
+}
+.font{
+	color:#F9AD33;
+}
+
+
+@media screen and (max-width:993px){
+	.txt-sd{
+		padding:3px;
+		width:70%;
+		left:15%;
+	}	
+	.txt-saudacao{
+		font-size:20px;
+	}
+			
+}
+
+@media screen and (max-width:576px){
+	.print{
+		box-shadow:none;
+		border-radius:none;
+	}
+	.txt-sd{
+		padding:3px;
+		width:100%;
+		left:0%;
+	}	
+	.txt-saudacao{
+		font-size:18px;
+	}
+	label{
+		font-size:13px;
+	}
+	
+			
+}
